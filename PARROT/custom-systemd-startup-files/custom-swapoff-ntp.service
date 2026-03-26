@@ -1,0 +1,9 @@
+[Unit]
+Description=disables-swap-enables-ntp
+
+[Service]
+ExecStart=/etc/systemd/system/CUSTOM-SYSD/custom-swapoff-ntp.sh
+
+[Install]
+WantedBy=graphical.target
+

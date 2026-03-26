@@ -1,0 +1,15 @@
+
+              :::example::: 
+    
+sudo mount -t 9p -o trans=virtio /mount-test /mount-external1  
+
+          ::::::::FINAL EXPLANATION---OFICIAL:::::  
+   
+sudo mount -t 9p -o trans=virtio (target-path-on-GUEST-ex: /mount-test) (desired-mount-point-on-GUEST-ex: /mount-external1)
+sudo mount -t 9p -o trans=virtio /source-on-guest /target-on-guest
+
+
+*****IMPORTANT****
+   use a target path in the root  / of the guest or else youll get error & wont boot.
+   ex:
+   /external-mounts

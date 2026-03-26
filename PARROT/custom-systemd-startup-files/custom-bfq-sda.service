@@ -1,0 +1,5 @@
+[Service]
+ExecStart=/etc/systemd/system/CUSTOM-SYSD/custom-bfq-sda.sh
+
+[Install]
+WantedBy=graphical.target

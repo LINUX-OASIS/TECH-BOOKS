@@ -1,0 +1,4 @@
+for linux install::  spice-vdagent  (shared clipboards, file transfer, folder sharing, display resizing)
+                    sudo apt install spice-vdagent  (for guest-utilities equivalent on guestOS)
+
+for Windows install:: virtio windows drivers from fedora

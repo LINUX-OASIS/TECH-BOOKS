@@ -1,0 +1,7 @@
+# /etc/default/grub
+# edit line GRUB_CMDLINE_LINUX_DEFAULT=
+
+
+
+intel_idle.max_cstate=1
+

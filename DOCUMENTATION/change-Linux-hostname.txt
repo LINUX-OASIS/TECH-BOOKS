@@ -1,0 +1,12 @@
+CHANGE HOSTNAME
+
+1-modify desired <new hostname> hostname in
+
+/etc/hostname
+
+2- and modify or add line /etc/hosts
+
+127.0.0.1 <new hostname>
+
+
+....... also, we can change network hostname with <nmtui> A.K.A. Network Manager Terminal user interface ....

@@ -1,0 +1,9 @@
+[Unit]
+Description=custom_restart-NetworkManager
+After=custom-swapoff-ntp.service
+
+[Service]
+ExecStart=/etc/systemd/system/CUSTOM-SYSD/custom-restart-NetworkManager.sh
+
+[Install]
+WantedBy=graphical.target

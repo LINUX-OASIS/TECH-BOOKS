@@ -1,0 +1,15 @@
+# /etc/default/grub
+# edit line GRUB_CMDLINE_LINUX_DEFAULT=
+
+
+intel_idle.max_cstate=1
+
+mitigations=off
+
+intel_iommu=on
+
+
+
+#optional, if needed:
+#Turns off the new AHCI power control for SATA devices
+ahci.mobile_lpm_policy=0

@@ -1,0 +1,30 @@
+Directory for systemd service file is:: /etc/systemd/system
+
+[Unit]
+Description=descriptor-or-details-of-this-custom-service
+After= start-this-service-after-the-specified-service-or-services-on-this-line-sepperated-by-a-space
+
+#  [unit is optional] ###
+
+[Service]
+ExecStart=/location/of-executable-bash-file.sh
+
+[Install]
+WantedBy=specify-when-to-execute-custom-systemd-service.target
+    some-good-go-to.target places:
+         
+         default.target
+         multi-user.target
+         graphical.target
+
+
+############EXAMPLE-CUSTOM-SYSTEMD-SERVICE-FILE##########
+
+[Unit]
+Descriptor=this_service_sets_io-scheduler-to-bfq
+
+[Service]
+ExecStart=/etc/systemd/system/CUSTOM-SYSD/custom-bfq-sda.sh
+
+[Install]
+WantedBy=default.target
